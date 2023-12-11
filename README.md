@@ -1,5 +1,5 @@
 # Urban Mobility Insights: Forecasting Bike Rentals
-##INFORMATION:
+## INFORMATION:
 
 In many urban cities, the introduction of rental bikes has revolutionized mobility and brought enhanced comfort to commuters. The availability and accessibility of rental bikes at the right time play a pivotal role in reducing waiting times, offering a convenient mode of transportation for residents and visitors alike. One of the key elements in achieving this stability is the accurate prediction of bike counts required at each hour.
 
