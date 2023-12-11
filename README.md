@@ -1,17 +1,17 @@
 # Urban Mobility Insights: Forecasting Bike Rentals
-# INFORMATION:
+##INFORMATION:
 
 In many urban cities, the introduction of rental bikes has revolutionized mobility and brought enhanced comfort to commuters. The availability and accessibility of rental bikes at the right time play a pivotal role in reducing waiting times, offering a convenient mode of transportation for residents and visitors alike. One of the key elements in achieving this stability is the accurate prediction of bike counts required at each hour.
 
 Analyzing dataset and building predictive models allows city planners and bike-sharing service providers to anticipate demand fluctuations, adjust their operations, and ultimately contribute to a sustainable and reliable rental bike system in urban areas.
 
-# APPLICATION:
+## APPLICATION:
 
 Data-Driven Decision Making: The dataset provides valuable insights into how weather conditions, time of day, and other factors influence bike rental patterns. This information can inform data-driven decisions for optimizing operations. These insights are relevant not only for bike-sharing services but also for ride-sharing giants like Uber and regional players like Rapido in India, where urban mobility is a growing concern.
 #DATA DISCRIPTION:
 The dataset contains weather information (Temperature, Humidity, Windspeed, Visibility, Dewpoint, Solar radiation, Snowfall, Rainfall), the number of bikes rented per hour and date information.
 
-# ATTRIBUTE INFORMATION:
+## ATTRIBUTE INFORMATION:
 
 Date : year-month-day
 
