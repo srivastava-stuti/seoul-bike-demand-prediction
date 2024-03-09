@@ -1,44 +1,41 @@
 # Urban Mobility Insights: Forecasting Bike Rentals
+
 ## INFORMATION:
 
-In many urban cities, the introduction of rental bikes has revolutionized mobility and brought enhanced comfort to commuters. The availability and accessibility of rental bikes at the right time play a pivotal role in reducing waiting times, offering a convenient mode of transportation for residents and visitors alike. One of the key elements in achieving this stability is the accurate prediction of bike counts required at each hour.
+Rental bikes have revolutionized transportation in many urban cities by providing greater mobility and convenience to commuters. The availability of rental bikes reduces waiting time and has become a convenient mode of transportation for residents and visitors. Accurately forecasting bike counts is crucial, but it's equally important to consider the entire supply chain that supports the biking system, from the manufacturing and distribution of bikes to the maintenance of the infrastructure. Taking a holistic approach to supply chain management ensures the biking system operates smoothly and efficiently, providing a reliable and enjoyable transportation option for all.
 
-Analyzing dataset and building predictive models allows city planners and bike-sharing service providers to anticipate demand fluctuations, adjust their operations, and ultimately contribute to a sustainable and reliable rental bike system in urban areas.
+To achieve a sustainable and reliable rental bike system in urban areas, analyzing datasets and building predictive models is crucial. This enables city planners and bike-sharing service providers to anticipate demand fluctuations and adjust their operations accordingly. Ultimately, this contributes to the success of a rental bike system in urban areas.
 
 ## APPLICATION:
 
-Data-Driven Decision Making: The dataset provides valuable insights into how weather conditions, time of day, and other factors influence bike rental patterns. This information can inform data-driven decisions for optimizing operations. These insights are relevant not only for bike-sharing services but also for ride-sharing giants like Uber and regional players like Rapido in India, where urban mobility is a growing concern.
-#DATA DISCRIPTION:
-The dataset contains weather information (Temperature, Humidity, Windspeed, Visibility, Dewpoint, Solar radiation, Snowfall, Rainfall), the number of bikes rented per hour and date information.
+Data-driven decision making can be greatly informed by analyzing the datasets that reveal valuable insights into how weather conditions, time of day, and other factors impact bike rental patterns. These insights can be used to optimize operations not only for bike-sharing services but also for ride-sharing companies like Uber and regional players like Rapido in India, where urban mobility is a growing concern.
 
-## ATTRIBUTE INFORMATION:
+## DATA DISCRIPTION:
+The dataset available at http://archive.ics.uci.edu/dataset/560/seoul+bike+sharing+demand contains weather information such as temperature, humidity, windspeed, visibility, dew point, solar radiation, snowfall, rainfall, along with the date and hourly bike rental information.
 
-Date : year-month-day
+## Conclusion
 
-Rented Bike count - Count of bikes rented at each hour
+After conducting exploratory data analysis, we identified several key variables that significantly impact the number of bikes rented on a specific day. These variables include:
 
-Hour - Hour of he day
+- **Hour:** Rental patterns vary throughout the day, with peak demand during specific hours.
+- **Temperature(°C):** Warmer days lead to higher bike rentals, while colder days see fewer rentals.
+- **Humidity(%):** Lower humidity levels are associated with increased bike rentals.
+- **Wind Speed (m/s):** Lower wind speeds may encourage more bike rentals.
+- **Visibility (10m):** Clear and good visibility conditions attract more riders.
+- **Solar Radiation (MJ/m2):** Higher solar radiation levels (sunnier days) correlate with increased rentals.
+- **Rainfall(mm):** Rainy days result in fewer bike rentals.
+- **Snowfall (cm):** Snowy conditions significantly reduce bike rentals.
+- **Day, Month, Year:** Specific dates and seasonal variations impact rental trends.
 
-Temperature-Temperature in Celsius
+Here is a summary of the model performance:
 
-Humidity - %
+| Model                   | R^2     | RMSE    |
+|-------------------------|---------|---------|
+| Linear Regression       | 0.559   | 0.179   |
+| Decision Tree Regressor | 0.761   | 0.132   |
+| Random Forest Regressor | 0.869   | 0.097   |
 
-Windspeed - m/s
+**Random Forest Regressor** emerged as the best-performing model in our analysis.
 
-Visibility - 10m
-
-Dew point temperature - Celsius
-
-Solar radiation - MJ/m2
-
-Rainfall - mm
-
-Snowfall - cm
-
-Seasons - Winter, Spring, Summer, Autumn
-
-Holiday - Holiday/No holiday
-
-Functional Day - NoFunc(Non Functional Hours), Fun(Functional hours)
-
+## 
 
